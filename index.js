@@ -180,3 +180,89 @@
     // x *= 4;    // 24
     // x /= 2;    // 12
     // console.log(x); // 12
+
+// Bài tập 1 – Câu lệnh if và ép kiểu
+    // if ("0") {
+    //   console.log("A");
+    // } else {
+    //   console.log("B");
+    // } // A
+
+    // if (0) {
+    //   console.log("C");
+    // } else {
+    //   console.log("D");
+    // } // D
+
+    // if ([]) {
+    //   console.log("E");
+    // } else {
+    //   console.log("F");
+    // } // E
+
+/**
+ * A D E Vì "0" và [] không phải là falsy
+ * 0 là falsy
+ */
+
+// Bài tập 2 – if...else if...else với giá trị falsy/truthy
+    // let x = "5";
+    // if (x == 5) {
+    //     console.log("A");
+    // } else if (x === 5) {
+    //     console.log("B");
+    // } else {
+    //     console.log("C");
+    // } // A
+
+/**
+ * ==: So sánh chuyển đổi "5" => 5 == 5 => true => A
+ */
+
+// Bài tập 3 – switch cơ bản
+    // let fruit = "apple";
+    // switch (fruit) {
+    //   case "banana":
+    //     console.log("Banana");
+    //   case "apple":
+    //     console.log("Apple");
+    //   case "orange":
+    //     console.log("Orange");
+    //     break;
+    //   default:
+    //     console.log("Unknown");
+    //  } // "Apple" "Orange"
+
+/**
+ * Vì ở case apple không có break => Tiếp tục nhảy xuống case dưới cho đến khi gặp break
+ * switch dùng so sánh không chuyển đổi (so sánh chặt ===)
+ */
+
+// Bài tập 4 – switch với so sánh kiểu
+    // let num = 10;
+    // switch (num) {
+    //   case "10":
+    //     console.log("String 10");
+    //     break;
+    //   case 10:
+    //     console.log("Number 10");
+    //     break;
+    //   default:
+    //     console.log("Other");
+    // } // Number 10
+
+/**
+ * Switch dùng so sánh không chuyển đổi (===) để kiểm tra case
+ */
+
+// Bài tập 5 – Ternary operator
+    // let age = 20;
+    // let canVote = age >= 18 ? "Yes" : "No";
+    // console.log(canVote); // Yes
+
+    // let canVote = "No"
+    // if(age >= 18){
+    //     canVote = "Yes"
+    // }
+    // console.log(canVote)
+
