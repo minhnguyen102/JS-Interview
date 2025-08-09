@@ -119,3 +119,64 @@
  * Tham chiếu: Dành cho các kiểu dữ liệu phức tạp (object, array, function)
  *              Biến tham chiếu lưu giữ địa chỉ ô nhớ
  */
+
+// Day 2
+
+// Bai 1: : So sánh == vs ===
+    // console.log(0 == '0') // true
+    // console.log(0 === '0') // false
+    // console.log(false == '0') // true
+    // console.log(false === '0') // false
+
+/**
+ * == và === khác nhau: 
+ *  == : so sánh ép kiểu (đưa về kiểu dữ liệu rồi mới so sánh)
+ *  === : so sánh không ép kiểu (không thực hiện chuyển kiểu dữ liệu. So sánh kiểu dữ liệu luôn)
+ */
+
+// Bai 2: Toán tử + và ép kiểu
+    // console.log(1 + '2') // 12
+    // console.log('2' + 1)  // 21
+    // console.log(1 + 2 + '3') // 33
+    // console.log('3' + 2 + 1) // 321
+    // console.log(45 + 10 + "10") // 5510
+    // console.log("10" - 5) // 5 
+
+/**
+ * Toán tử + là toán tử duy nhất vừa cộng số vừa nối chuỗi
+ * Nếu có ít nhất 1 toán hạng kiểu chuỗi (string) => phép cộng sẽ thành nối chuỗi
+ * Các toán tử khác đều biến chuỗi thành số nếu có thể 
+ */
+
+
+// Bài 3: So sánh mảng & object
+    // console.log([] == []) // false
+    // console.log([] === []) // false
+    // console.log([1] == [1]) // flase
+    // console.log({} == {}) // false
+
+/**
+ * False hết vì mảng lưu địa chỉ ô nhớ tham chiếu đến nó (bản chất là đang so sánh địa chỉ ô nhớ)
+ * Mỗi mảng hoặc object mới sẽ có địa chỉ ô nhớ khác nhau => khi so sánh sẽ cho kết quả khác nhau
+ */
+
+// Bài 4: Toán tử logic & short-circuit
+    // console.log(null || "hi") // true
+    // console.log('' || undefined) // undefind
+    // console.log(0 && "hi") // false
+    // console.log("hello" && "hi") // true
+
+/**
+ * Liên quan đến các giá trị falsy và truthy 
+ * Falsy gồm: 0, '', flase, null, undefined, NaN
+ * && trả về falsy hoặc giá trị cuối cùng
+ * || trả về truthy hoặc giá trị cuối cùng
+ */
+
+// Bài 5: Toán tử gán kết hợp
+    // let x = 5;
+    // x += 3;    // 8
+    // x -= 2;    // 6
+    // x *= 4;    // 24
+    // x /= 2;    // 12
+    // console.log(x); // 12
