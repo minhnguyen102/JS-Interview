@@ -266,3 +266,78 @@
     // }
     // console.log(canVote)
 
+// Bài 1 – for cơ bản & phạm vi biến
+    // for (var i = 0; i < 3; i++) {
+    //   setTimeout(() => console.log(i), 0);
+    // }
+
+    // fix var
+    // for(var i = 0; i < 3; i++){
+    //     ((x) => setTimeout(() => console.log(x)))(i)
+    // }
+
+    // for (let j = 0; j < 3; j++) {
+    //   setTimeout(() => console.log(j), 0);
+    // }
+
+/**
+ * Ouput: 
+ * 3 lần só 3
+ * 1 2 3 
+ * 
+ * var: không có tính block scope, sau khi for thực hiện xong => i = 3 => i đó được dùng cho toàn bộ 3 hàm setTimeOut
+ * let: có tính block scope: j sau mỗi lần lặp được ghi nhớ và sử dụng cho setTimeout
+ */
+
+// Bài 2 – while & do...while
+    // let a = 0;
+    // while (a < 3) {
+    //   console.log("while:", a);
+    //   a++;
+    // } // 0 1 2 
+
+    // let b = 3;
+    // do {
+    //   console.log("do...while:", b);
+    //   b++;
+    // } while (b < 3); // 3
+
+/**
+ * While: Thực thi khi điều kiện thỏa mãn
+ * do while: Thực thi do lần đầu dù điều kiện không thỏa mãn, sau đó mới thực hiện while (Check login 3 lần)
+ */
+
+// Bài 3 – break và continue
+    // for (let x = 0; x < 5; x++) {
+    // if (x === 2) continue;
+    // if (x === 4) break;
+    // console.log(x);
+    // } // 0 1 3 
+
+// Bài 4 – for...in và for...of
+    // let arr = ["a", "b", "c"];
+    // arr.foo = "bar";
+    // arr.push("d")
+
+    // // console.log(arr)
+
+    // for (let key in arr) {
+    //   console.log("for...in:", key); // 0 1 2 foo 3 
+    // }
+
+    // for (let value of arr) {
+    //   console.log("for...of:", value); // a b c d 
+    // }
+
+// Bài 5 – Lồng vòng lặp & hiệu năng
+// for (let i = 0; i < 2; i++) {
+//   for (let j = 0; j < 2; j++) {
+//     console.log(i, j);
+//   }
+// }
+
+/**
+ * Độ phức tạp: O^n2 
+ */
+
+
