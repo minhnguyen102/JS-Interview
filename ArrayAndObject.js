@@ -86,3 +86,37 @@
 /**
  * Không nên xóa trực tiếp bằng cách delete obj.password => xóa luôn trên data gốc
  */
+
+// Array
+// Bài 1 – map
+    // const nums = [1, 2, 3, 4];
+    // const newNums = nums.map((item, index) => item * item)
+    // console.log(newNums)
+
+//Bài 2 – filter
+    // const ages = [16, 21, 18, 30, 15];
+    // adusts = ages.filter(item => item >= 18)
+    // console.log(adusts)
+
+// Bài 3 – reduce
+    // const prices = [10, 20, 30];
+    // const sum = prices.reduce((total, item) => total + item, 0)
+    // console.log(sum)
+
+// Bài 4 – find
+    // const users = [
+    //   { id: 1, name: "Alice" },
+    //   { id: 2, name: "Bob" },
+    //   { id: 3, name: "Charlie" }
+    // ];
+
+    // console.log(users.find(item => item.id === 2))
+
+// Bài 5 – some & every
+    // const numbers = [2, 4, 6, 8];
+    // const flag = numbers.some(item => item % 2 === 1)
+    // console.log(flag) // false
+    // console.log(numbers.every(item => item % 2 === 0)) // true
+
+
+
